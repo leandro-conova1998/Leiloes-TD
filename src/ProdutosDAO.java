@@ -14,6 +14,7 @@ public class ProdutosDAO {
     ResultSet resultset;
     ArrayList<ProdutosDTO> listagem = new ArrayList<>();
     
+    // Cadastro de produto
     public void cadastrarProduto (ProdutosDTO produto){
         String sql = "INSERT INTO produtos (nome,valor,status) VALUES (?,?,?)";
         try{
